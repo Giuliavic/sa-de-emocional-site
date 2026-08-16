@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal de Escuta | Entre Nós</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <a href="index.html" class="logo">
+        🐱 entre nós<span>.</span>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="menu">
+        <a href="index.html">Início</a>
+        <a href="escuta.html">Portal de Escuta</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="referencias.html">Referências</a>
+    </nav>
+
+</header>
+
+
+<main class="page">
+
+    <section class="page-title">
+
+        <p class="tag">UM ESPAÇO SEM JULGAMENTO</p>
+
+        <h1>Portal de Escuta</h1>
+
+        <p>
+            Escreva o que estiver passando pela sua cabeça.
+            Você não precisa encontrar as palavras perfeitas.
+        </p>
+
+    </section>
+
+
+    <section class="listen">
+
+        <div class="listen-box">
+
+            <div class="notice">
+
+                <strong>♡ Antes de escrever</strong>
+
+                <p>
+                    Você pode falar sobre escola, amizades,
+                    família, pressão, inseguranças ou qualquer
+                    sentimento que queira organizar.
+                </p>
+
+            </div>
+
+
+            <form id="listenForm">
+
+                <label for="feeling">
+                    Como você está se sentindo?
+                </label>
+
+                <select id="feeling" required>
+
+                    <option value="">
+                        Escolha uma opção
+                    </option>
+
+                    <option>Ansioso(a)</option>
+                    <option>Triste</option>
+                    <option>Cansado(a)</option>
+                    <option>Confuso(a)</option>
+                    <option>Sobrecarregado(a)</option>
+                    <option>Bem, mas queria conversar</option>
+                    <option>Outro sentimento</option>
+
+                </select>
+
+
+                <label for="message">
+                    Seu desabafo <small>(simulado)</small>
+                </label>
+
+                <textarea
+                    id="message"
+                    maxlength="1000"
+                    placeholder="Pode escrever aqui..."
+                    required>
+                </textarea>
+
+                <div class="counter">
+
+                    <span>
+                        <span id="counter">0</span>/1000 caracteres
+                    </span>
+
+                    <button class="button" type="submit">
+                        Enviar desabafo ♡
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <div id="response" class="response"></div>
+
+        </div>
+
+
+        <aside class="support">
+
+            <div class="big-cat">🐱</div>
+
+            <h2>
+                Você não precisa
+                resolver tudo sozinho.
+            </h2>
+
+            <p>
+                Quando algo estiver pesado demais,
+                procure uma pessoa adulta de confiança.
+            </p>
+
+            <ul>
+
+                <li>Professor(a)</li>
+                <li>Pedagogo(a)</li>
+                <li>Direção da escola</li>
+                <li>Familiar ou responsável</li>
+                <li>Outro adulto de confiança</li>
+
+            </ul>
+
+            <div class="important">
+
+                <strong>Importante:</strong>
+
+                Este formulário é apenas uma simulação.
+                Nenhuma informação é armazenada.
+
+            </div>
+
+        </aside>
+
+    </section>
+
+
+    <section class="phrases">
+
+        <p class="tag">GUARDE UMA DELAS</p>
+
+        <div class="phrase-grid">
+
+            <p>“Você não está exagerando por sentir.”</p>
+
+            <p>“Seu ritmo também merece respeito.”</p>
+
+            <p>“Tudo bem pedir um pouco de ajuda.”</p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div>
+        <strong>entre nós.</strong>
+        <p>Um portal escolar de acolhimento e informação.</p>
+    </div>
+
+    <p>Projeto Individual • Saúde Emocional</p>
+
+</footer>
+
+
+<div class="accessibility">
+
+    <button onclick="increaseFont()">A+</button>
+    <button onclick="toggleContrast()">◐</button>
+    <button onclick="toggleDark()">☾</button>
+
+</div>
+
+
+<button id="topButton" onclick="topPage()">↑</button>
+
+
+<script src="script.js"></script>
+
+</body>
+                                        </html>
