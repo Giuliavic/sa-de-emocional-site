@@ -1,1 +1,227 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Nós | Saúde Emocional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo">🐱 entre nós<span>.</span></a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="menu">
+        <a href="index.html">Início</a>
+        <a href="escuta.html">Portal de Escuta</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="referencias.html">Referências</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-text">
+        <p class="tag">UM CANTINHO PARA RESPIRAR ♡</p>
+
+        <h1>
+            Você não precisa
+            <em>dar conta de tudo.</em>
+        </h1>
+
+        <p>
+            O <strong>Entre Nós</strong> é um espaço de acolhimento
+            criado para estudantes entenderem melhor seus sentimentos,
+            encontrarem informação e descobrirem que pedir ajuda também
+            é uma forma de cuidado.
+        </p>
+
+        <div class="buttons">
+            <a href="escuta.html" class="button">
+                Quero ser ouvido ♡
+            </a>
+
+            <a href="#sobre" class="link">
+                Conhecer o portal ↓
+            </a>
+        </div>
+    </div>
+
+    <div class="pusheen">
+        <div class="heart">♡</div>
+
+        <div class="cat">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+
+            <div class="eye eye1"></div>
+            <div class="eye eye2"></div>
+
+            <div class="nose"></div>
+
+            <div class="mouth"></div>
+
+            <div class="blush blush1"></div>
+            <div class="blush blush2"></div>
+        </div>
+
+        <div class="speech">
+            respira.<br>
+            <strong>você chegou até aqui.</strong>
+        </div>
+    </div>
+
+</section>
+
+
+<section id="sobre" class="about">
+
+    <div>
+        <p class="tag">POR QUE ESSE ESPAÇO EXISTE?</p>
+
+        <h2>Sentir não é fraqueza.</h2>
+
+        <p>
+            A adolescência pode trazer mudanças, cobranças,
+            inseguranças, problemas de relacionamento e muitas
+            emoções diferentes.
+        </p>
+
+        <p>
+            Falar sobre aquilo que sentimos pode ajudar a organizar
+            nossos pensamentos e perceber quando precisamos de apoio.
+        </p>
+
+        <p>
+            O Entre Nós é um portal informativo e educativo.
+            Ele não substitui um profissional de saúde.
+        </p>
+    </div>
+
+    <div class="quote">
+        <span>“</span>
+        <h3>
+            Você pode pedir ajuda
+            antes de chegar no seu limite.
+        </h3>
+
+        <small>— um lembrete do Entre Nós</small>
+    </div>
+
+</section>
+
+
+<section class="cards">
+
+    <article class="card">
+        <div class="icon">☁</div>
+
+        <h3>Entenda o que sente</h3>
+
+        <p>
+            Conheça informações sobre emoções,
+            autocuidado e situações comuns entre estudantes.
+        </p>
+    </article>
+
+
+    <article class="card destaque">
+
+        <div class="icon">♡</div>
+
+        <h3>Fale sem julgamento</h3>
+
+        <p>
+            Escreva um desabafo simulado e receba
+            uma mensagem automática de acolhimento.
+        </p>
+
+        <a href="escuta.html">
+            Ir para a escuta →
+        </a>
+
+    </article>
+
+
+    <article class="card">
+
+        <div class="icon">✦</div>
+
+        <h3>Teste seus conhecimentos</h3>
+
+        <p>
+            Responda cinco perguntas sobre saúde emocional
+            e veja seu resultado.
+        </p>
+
+        <a href="quiz.html">
+            Fazer o quiz →
+        </a>
+
+    </article>
+
+</section>
+
+
+<section class="messages">
+
+    <button onclick="previousMessage()">‹</button>
+
+    <div id="messageSlide">
+
+        <span>01</span>
+
+        <h2>
+            Não existe jeito certo de sentir.
+        </h2>
+
+        <p>
+            Suas emoções merecem espaço,
+            mesmo quando parecem confusas.
+        </p>
+
+    </div>
+
+    <button onclick="nextMessage()">›</button>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div>
+        <strong>entre nós.</strong>
+        <p>Um portal escolar de acolhimento e informação.</p>
+    </div>
+
+    <p>Projeto Individual • Saúde Emocional</p>
+
+</footer>
+
+
+<div class="accessibility">
+
+    <button onclick="increaseFont()">A+</button>
+
+    <button onclick="toggleContrast()">◐</button>
+
+    <button onclick="toggleDark()">☾</button>
+
+</div>
+
+
+<button id="topButton" onclick="topPage()">↑</button>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
