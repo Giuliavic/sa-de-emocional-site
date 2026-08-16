@@ -2,12 +2,15 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portal de Escuta | Entre Nós</title>
+    <title>Quiz | Entre Nós</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -21,10 +24,21 @@
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
     <nav id="menu">
+
         <a href="index.html">Início</a>
-        <a href="escuta.html">Portal de Escuta</a>
-        <a href="quiz.html">Quiz</a>
-        <a href="referencias.html">Referências</a>
+
+        <a href="escuta.html">
+            Portal de Escuta
+        </a>
+
+        <a href="quiz.html">
+            Quiz
+        </a>
+
+        <a href="referencias.html">
+            Referências
+        </a>
+
     </nav>
 
 </header>
@@ -34,142 +48,150 @@
 
     <section class="page-title">
 
-        <p class="tag">UM ESPAÇO SEM JULGAMENTO</p>
+        <p class="tag">VAMOS TESTAR?</p>
 
-        <h1>Portal de Escuta</h1>
+        <h1>Quiz Emocional</h1>
 
         <p>
-            Escreva o que estiver passando pela sua cabeça.
-            Você não precisa encontrar as palavras perfeitas.
+            Responda às cinco perguntas e descubra
+            quantas você consegue acertar.
         </p>
 
     </section>
 
 
-    <section class="listen">
+    <form id="quizForm" class="quiz">
 
-        <div class="listen-box">
+        <fieldset>
 
-            <div class="notice">
+            <legend>
+                1. Quando uma pessoa está passando por um momento difícil,
+                qual atitude demonstra acolhimento?
+            </legend>
 
-                <strong>♡ Antes de escrever</strong>
+            <label>
+                <input type="radio" name="q1" value="a">
+                Ignorar para não incomodar.
+            </label>
 
-                <p>
-                    Você pode falar sobre escola, amizades,
-                    família, pressão, inseguranças ou qualquer
-                    sentimento que queira organizar.
-                </p>
+            <label>
+                <input type="radio" name="q1" value="b">
+                Ouvir sem julgamentos e oferecer apoio.
+            </label>
 
-            </div>
+            <label>
+                <input type="radio" name="q1" value="c">
+                Dizer que o problema não é importante.
+            </label>
 
-
-            <form id="listenForm">
-
-                <label for="feeling">
-                    Como você está se sentindo?
-                </label>
-
-                <select id="feeling" required>
-
-                    <option value="">
-                        Escolha uma opção
-                    </option>
-
-                    <option>Ansioso(a)</option>
-                    <option>Triste</option>
-                    <option>Cansado(a)</option>
-                    <option>Confuso(a)</option>
-                    <option>Sobrecarregado(a)</option>
-                    <option>Bem, mas queria conversar</option>
-                    <option>Outro sentimento</option>
-
-                </select>
+        </fieldset>
 
 
-                <label for="message">
-                    Seu desabafo <small>(simulado)</small>
-                </label>
+        <fieldset>
 
-                <textarea
-                    id="message"
-                    maxlength="1000"
-                    placeholder="Pode escrever aqui..."
-                    required>
-                </textarea>
+            <legend>
+                2. Pedir ajuda quando estamos sobrecarregados é:
+            </legend>
 
-                <div class="counter">
+            <label>
+                <input type="radio" name="q2" value="a">
+                Um sinal de fraqueza.
+            </label>
 
-                    <span>
-                        <span id="counter">0</span>/1000 caracteres
-                    </span>
+            <label>
+                <input type="radio" name="q2" value="b">
+                Uma forma de cuidado.
+            </label>
 
-                    <button class="button" type="submit">
-                        Enviar desabafo ♡
-                    </button>
+            <label>
+                <input type="radio" name="q2" value="c">
+                Algo que devemos evitar.
+            </label>
 
-                </div>
-
-            </form>
+        </fieldset>
 
 
-            <div id="response" class="response"></div>
+        <fieldset>
 
-        </div>
+            <legend>
+                3. Se um estudante estiver enfrentando uma situação
+                difícil na escola, ele pode procurar:
+            </legend>
 
+            <label>
+                <input type="radio" name="q3" value="a">
+                Apenas colegas.
+            </label>
 
-        <aside class="support">
+            <label>
+                <input type="radio" name="q3" value="b">
+                Ninguém.
+            </label>
 
-            <div class="big-cat">🐱</div>
+            <label>
+                <input type="radio" name="q3" value="c">
+                Professor, pedagogo, direção ou adulto de confiança.
+            </label>
 
-            <h2>
-                Você não precisa
-                resolver tudo sozinho.
-            </h2>
-
-            <p>
-                Quando algo estiver pesado demais,
-                procure uma pessoa adulta de confiança.
-            </p>
-
-            <ul>
-
-                <li>Professor(a)</li>
-                <li>Pedagogo(a)</li>
-                <li>Direção da escola</li>
-                <li>Familiar ou responsável</li>
-                <li>Outro adulto de confiança</li>
-
-            </ul>
-
-            <div class="important">
-
-                <strong>Importante:</strong>
-
-                Este formulário é apenas uma simulação.
-                Nenhuma informação é armazenada.
-
-            </div>
-
-        </aside>
-
-    </section>
+        </fieldset>
 
 
-    <section class="phrases">
+        <fieldset>
 
-        <p class="tag">GUARDE UMA DELAS</p>
+            <legend>
+                4. Qual dessas atitudes pode ajudar no cuidado emocional?
+            </legend>
 
-        <div class="phrase-grid">
+            <label>
+                <input type="radio" name="q4" value="a">
+                Conversar com alguém de confiança.
+            </label>
 
-            <p>“Você não está exagerando por sentir.”</p>
+            <label>
+                <input type="radio" name="q4" value="b">
+                Guardar todos os sentimentos.
+            </label>
 
-            <p>“Seu ritmo também merece respeito.”</p>
+            <label>
+                <input type="radio" name="q4" value="c">
+                Fingir que nada está acontecendo.
+            </label>
 
-            <p>“Tudo bem pedir um pouco de ajuda.”</p>
+        </fieldset>
 
-        </div>
 
-    </section>
+        <fieldset>
+
+            <legend>
+                5. As emoções devem ser:
+            </legend>
+
+            <label>
+                <input type="radio" name="q5" value="a">
+                Sempre escondidas.
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="b">
+                Reconhecidas e tratadas com respeito.
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="c">
+                Ignoradas quando forem negativas.
+            </label>
+
+        </fieldset>
+
+
+        <button type="submit" class="button">
+            Ver meu resultado ✦
+        </button>
+
+    </form>
+
+
+    <div id="quizResult" class="quiz-result"></div>
 
 </main>
 
@@ -177,11 +199,18 @@
 <footer>
 
     <div>
+
         <strong>entre nós.</strong>
-        <p>Um portal escolar de acolhimento e informação.</p>
+
+        <p>
+            Um portal escolar de acolhimento e informação.
+        </p>
+
     </div>
 
-    <p>Projeto Individual • Saúde Emocional</p>
+    <p>
+        Projeto Individual • Saúde Emocional
+    </p>
 
 </footer>
 
@@ -189,7 +218,9 @@
 <div class="accessibility">
 
     <button onclick="increaseFont()">A+</button>
+
     <button onclick="toggleContrast()">◐</button>
+
     <button onclick="toggleDark()">☾</button>
 
 </div>
@@ -201,4 +232,5 @@
 <script src="script.js"></script>
 
 </body>
-                                                    </html>
+
+    </html>
